@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushkar - Resume</title>
+    <!-- Use Google Fonts for a new elegant look -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f0f4f8; /* Very light gray background */
+            color: #334155;
+        }
+        .resume-container {
+            max-width: 900px;
+            margin: 4rem auto;
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header-section {
+            background-color: #1e293b;
+            color: #e2e8f0;
+            padding: 4rem 2rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #f0f4f8;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #1e293b;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            position: relative;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: #008080; /* Teal accent color */
+            border-radius: 2px;
+        }
+        .card {
+            padding: 1.5rem;
+            background-color: #f8fafc; /* Lighter card background */
+            border-radius: 1.25rem;
+            margin-bottom: 1.25rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+        .course-item, .project-item {
+            border-left: 5px solid #008080; /* Teal accent color */
+            padding-left: 1.5rem;
+        }
+        .skill-list-item {
+            display: inline-block;
+            background-color: #008080; /* Teal accent color */
+            color: #ffffff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .skill-list-item:hover {
+            background-color: #006666; /* Darker teal on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+    
+    <div class="resume-container">
+        <!-- Header Section -->
+        <header class="header-section text-center">
+            <img src="pskr.jpeg" alt="Profile Photo of Pushkar" class="profile-photo">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-2">Pushkar</h1>
+            <p class="text-xl sm:text-2xl font-light text-blue-200">M.Sc. Physics</p>
+            <p class="text-md sm:text-lg text-blue-300 mt-2">Indian Institute of Technology Bombay</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="p-8 space-y-12"> <!-- Increased spacing between sections -->
+
+            <!-- Education Section -->
+            <section>
+                <h2 class="section-title">Education</h2>
+                <div class="space-y-4">
+                    <div class="card">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                            <h3 class="text-lg font-bold text-gray-800">M.Sc. in Physics</h3>
+                            <p class="text-sm text-gray-500 font-medium">2026</p>
+                        </div>
+                        <p class="text-md font-medium text-gray-600">Indian Institute of Technology Bombay</p>
+                    </div>
+                    <div class="card">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                            <h3 class="text-lg font-bold text-gray-800">B.Sc. in Physics</h3>
+                            <p class="text-sm text-gray-500 font-medium">2023</p>
+                        </div>
+                        <p class="text-md font-medium text-gray-600">University of Lucknow</p>
+                        <p class="text-sm mt-1">Percentage: 62.17%</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Scholastic Achievements -->
+            <section>
+                <h2 class="section-title">Scholastic Achievements</h2>
+                <div class="card">
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Secured AIR 461 out of 13086 candidates in IIT JAM 2024 conducted by IIT MADRAS.</li>
+                        <li>Secured AIR 4079 in IIT JAM 2023 conducted by IIT GUWAHATI.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Technical Skills Section -->
+            <section>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="card">
+                    <div class="skill-grid">
+                        <div class="flex flex-col">
+                            <p class="skill-category">Programming & Scripting Languages</p>
+                            <ul class="skill-list">
+                                <li class="skill-list-item">Python</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="skill-category">Tools & Libraries</p>
+                            <ul class="skill-list">
+                                <li class="skill-list-item">NumPy</li>
+                                <li class="skill-list-item">MatPlotLib</li>
+                                <li class="skill-list-item">SciPy</li>
+                                <li class="skill-list-item">Linalg</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="skill-category">IDEs</p>
+                            <ul class="skill-list">
+                                <li class="skill-list-item">Jupyter Notebook</li>
+                                <li class="skill-list-item">VSCode</li>
+                                <li class="skill-list-item">MS Office</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Course Projects Section -->
+            <section>
+                <h2 class="section-title">Course Projects</h2>
+                <div class="space-y-4">
+                    <div class="card project-item">
+                        <h3 class="text-lg font-bold text-gray-800">Automatic Night Lamp (Electronic)</h3>
+                        <p class="text-sm font-medium text-gray-600 mb-2">Supervised by Prof. Varun Bhalerao</p>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Designed an Automatic Night Lamp system to improve street safety in rural areas.</li>
+                            <li>Enhanced team collaboration and project management skills through joint development.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Courses Section -->
+            <section>
+                <h2 class="section-title">Relevant Courses</h2>
+                <div class="space-y-4">
+                    <div class="card course-item">
+                        <h3 class="text-lg font-bold text-gray-800">Classical Mechanics</h3>
+                        <p class="text-sm text-gray-700 mt-1">Revision of elementary Newtonian mechanics, Lagrangian formalism, Generalised Kinetic energy, Potential energy, Symmetries leading to Lagrangian of a free particle in non-relativistic and relativistic mechanics.</p>
+                    </div>
+                    <div class="card course-item">
+                        <h3 class="text-lg font-bold text-gray-800">Electronics</h3>
+                        <p class="text-sm text-gray-700 mt-1">Semiconductor basics, diodes, transistors, transistor models, biasing, amplifiers (CE, CC, Swamped), Darlington pairs, difference amplifiers, operational amplifiers, feedback, instrumentation amplifier, filters, JFETs and MOSFETs, Digital electronics: Logic gates, Boolean algebra, Karnaugh maps, flip flops, shift registers, adders, counters, ADC and DAC.</p>
+                    </div>
+                    <div class="card course-item">
+                        <h3 class="text-lg font-bold text-gray-800">Statistical Physics</h3>
+                        <p class="text-sm text-gray-700 mt-1">Revision of Thermodynamics: Zeroth law, First law, Second law, Carnot cycle, Claussius theorem, reversible work and heat transfer. Entropy. Extensivity - Euler and Gibbs-Duhem relations, Statistical Ensembles: Microscopic dynamics and Liouville's theorem.</p>
+                    </div>
+                    <div class="card course-item">
+                        <h3 class="text-lg font-bold text-gray-800">Electromagnetic Theory I</h3>
+                        <p class="text-sm text-gray-700 mt-1">Electrostatics Introduction: Coulomb's law, Scalar potential, Electrostatic potential energy, Total energy, electric stress tensor Multipole expansion, Conducting matter, Dielectric Matter 2. Boundary Value Problems Solution of Laplace's equation: Potential theory.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Extra-Curriculars -->
+            <section>
+                <h2 class="section-title">Extra-Curriculars</h2>
+                <div class="card">
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Created strategic videos for students in classes 9-12 and for JEE/NEET aspirants, offering academic help with over 50 subscribers and 25k views.</li>
+                        <li>Gold medalist in cricket for Physics Department, IIT Bombay - Participated in PGGC events.</li>
+                        <li>Competed for Physics Department in 100m sprint in PGGC athletic events.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Interests & Hobbies -->
+            <section>
+                <h2 class="section-title">Interests & Hobbies</h2>
+                <div class="card">
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Enthusiastic about cricket, both playing and following professional matches.</li>
+                        <li>Enjoy watching movies and web series for relaxation and creative inspiration.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
